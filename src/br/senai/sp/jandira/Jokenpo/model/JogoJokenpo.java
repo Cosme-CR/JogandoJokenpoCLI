@@ -62,8 +62,6 @@ public class JogoJokenpo {
             apresentacaoPc = "TESOURA";
             resultado = "VITORIA";
         }
-
-
         if (usuario ==1  && pc ==0){
             apresentacaoUsuario = "PAPEL";
             apresentacaoPc = "PEDRA";
@@ -74,8 +72,6 @@ public class JogoJokenpo {
             apresentacaoPc = "TESOURA";
             resultado = "DERROTA";
         }
-
-
         if (usuario ==2  && pc ==0){
             apresentacaoUsuario = "TESOURA";
             apresentacaoPc = "PEDRA";
@@ -86,14 +82,12 @@ public class JogoJokenpo {
             apresentacaoPc = "PAPEL";
             resultado = "VITORIA";
         }
-
         if(usuario == pc ){
-
+            apresentacaoUsuario = "";
+            apresentacaoPc = "";
             resultado = "IMPATE";
         }
     }
-
-
     public void exibirResultado(){
         calculaREsultado();
         System.out.println("|----------------------------|");
